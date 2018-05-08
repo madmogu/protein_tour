@@ -4,8 +4,12 @@
   </head>
   <body>
     <a-scene>
-<a-entity gltf-model="/models/CwP3XhDHXN1F.gltf" scale="0.001 0.001 0.001"></a-entity>
-      <a-sky color="#ECECEC"></a-sky>
+  <a-assets>
+    <a-asset-item id="h2-obj" src="/models/h2.obj"></a-asset-item>
+    <a-asset-item id="h2-mtl" src="/models/h2.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #h2-obj; mtl: #h2-mtl"></a-entity>
     </a-scene>
   </body>
 </html>
