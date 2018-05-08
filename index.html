@@ -5,10 +5,15 @@
   <body>
     <a-scene>
   <a-assets>
-    <a-asset-item id="cubehat" src="/models/untitled.glb"></a-asset-item>
+    <a-asset-item id="cubehat" src="/models/man.dae"></a-asset-item>
   </a-assets>
 
-  <a-entity gltf-model="#cubehat"></a-entity>
+  <a-entity id="model" position="0 0 -3">
+        <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="indefinite"></a-animation>
+        <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                         src="#why-male-models"></a-collada-model>        
+      </a-entity>
     </a-scene>
   </body>
 </html>
